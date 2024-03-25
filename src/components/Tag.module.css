@@ -1,0 +1,25 @@
+.tag {
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    padding: 4px 8px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.tag--default {
+    background-color: rgb(229, 229, 229);
+    color: rgb(18, 18, 18);
+    border: 1.5px solid rgb(229, 229, 229);
+}
+
+.tag--highlight {
+  background-color: transparent;
+  color: rgb(42, 42, 42);
+  border: 1.5px solid rgb(202, 202, 202);
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
