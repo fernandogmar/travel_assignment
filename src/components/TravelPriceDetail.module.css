@@ -1,0 +1,46 @@
+.detailFrom {
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.detailOld {
+    color: rgb(113, 113, 113);
+    font-size: 0.75rem;
+    font-weight: 400;
+    width: fit-content;
+}
+
+.detailOldPrice {
+    text-decoration: line-through;
+}
+
+.detailPercentage {    
+    display: inline-block;
+    background-color: rgb(242, 213, 98);
+    padding: 8px 6px;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    border-radius: 100px;
+    width: fit-content;
+
+    &::before {
+        content: '-';
+    }
+    &::after {
+        content: '%';
+    }
+}
+
+.detailPerNight {
+    color: rgb(113, 113, 113);
+    font-size: 0.75rem;
+    font-weight: 400;
+    width: fit-content;
+}
+
+.detailWrapper {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+}
