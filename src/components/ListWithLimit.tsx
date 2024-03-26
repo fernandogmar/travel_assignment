@@ -1,6 +1,5 @@
 import React, { Children, ReactNode } from "react";
 import styles from './ListWithLimit.module.css';
-console.log(styles);
 
 type ListWithLimitProps = {
     children: ReactNode,
