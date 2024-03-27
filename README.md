@@ -18,6 +18,11 @@ npm install
 npm run storybook
 ```
 
+Automatic visual testing:
+```sh
+npm run chromatic
+```
+
 ### Further improvements
 
 - Improve design 
