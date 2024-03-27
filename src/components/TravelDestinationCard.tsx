@@ -22,12 +22,12 @@ export const TravelDestinationCard: React.FC<TravelDestinationCardProps> = ({
       <img className={styles.image} src={imageUrl} />
 
       <div className={styles.details}>
-        <div className={styles.detailsItem}>
+        <div className={styles.detailsBody}>
 
-          <div className={styles.detailsItemText}>
+          <div className={styles.detailsBodyText}>
             <div className={styles.detailsDestination}>{destination.destination} in {destination.days} days</div>
             <div className={styles.detailsTitle}>{destination.title}</div>
-            <div className={styles.detailsItemLists}>
+            <div className={styles.detailsLists}>
                 <ListWithLimit limit={limit}>
                     { destination.highlights.map((highlight) => <span>{ highlight.title }</span>) }
                 </ListWithLimit>
@@ -41,15 +41,15 @@ export const TravelDestinationCard: React.FC<TravelDestinationCardProps> = ({
                 <TravelPriceDetail priceDetail={ destination.priceDetail }/>
             </div>
         </div>
-        <div>
+        <div className={styles.detailsFooter}>
             <div className={styles.tags}>
                 { destination.hasPrivateTour ? (<Tag type='highlight'>Private tours</Tag>) : (<Tag type='highlight'>Group tours</Tag>) }
                 { destination.hasSoloTraveller ? (<Tag type='highlight'>Solo traveler</Tag>) : null }
                 { destination.tags.map((tag) => (<Tag key={tag.tagId}>{tag.name}</Tag>)) }
             </div>
-          <div>
-            <LinkButton href={destination.url}>See trip</LinkButton>
-          </div>
+            <div className={styles.buttonWrapper}>
+                <LinkButton href={destination.url}>See trip</LinkButton>
+            </div>
         </div>
       </div>
     </div>

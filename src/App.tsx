@@ -1,4 +1,3 @@
-import './App.css'
 import { TravelCountryDestionations } from '@/components/TravelCountryDestinations';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
