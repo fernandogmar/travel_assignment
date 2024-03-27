@@ -2,6 +2,7 @@ import { CountryDestinations } from "@/models/CountryDestinations";
 import { Destination } from "@/models/Destination";
 
 type CountryDTO = {
+  name: string;
   destinations: {
     featuredMultiMarket: Destination[];
     multiMarket: Destination[];
@@ -11,6 +12,7 @@ type CountryDTO = {
 };
 
 const fromResponse = (response: CountryDTO): CountryDestinations => ({
+  name: response.name,
   featuredMultiMarket: response.destinations.featuredMultiMarket,
   multiMarket: response.destinations.multiMarket,
 });

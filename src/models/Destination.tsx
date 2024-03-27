@@ -43,3 +43,6 @@ export type Destination = {
   hasSoloTraveller: boolean;
   [key: string]: any;
 };
+
+export const selectDestinationImage = (destination: Destination) : DestinationImage => destination.images[0]
+export const selectDestinationIncludesAsLabels = (destination: Destination) : string[] => destination.includes.map(text => text.toLowerCase().replace(/_/g, ' '))

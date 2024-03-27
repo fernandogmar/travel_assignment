@@ -1,0 +1,60 @@
+.card {
+    border: 1.5px solid rgb(229, 229, 229);
+    border-radius: 24px;
+    overflow: hidden;
+    max-width: 533px;
+    margin: auto;
+    background: rgb(255, 255, 255);
+}
+
+.details {
+    padding: 16px;
+}
+
+.detailsDestination {
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.detailsItem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+
+.detailsItemText {
+    flex: 1 1 auto;
+}
+
+.detailsItemLists {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 24px;
+    margin: 16px 0;
+}
+
+.detailsTitle {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.image {
+    width: 100%;
+}
+
+.label {
+    display: inline-block;
+    text-transform: lowercase;
+    &::first-letter {
+        text-transform: uppercase;
+    }
+}
+
+.tags {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,21 @@
+.header {
+    background-color: black;
+    height: 64px;
+    text-align: center;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    & ~ & {
+        margin-top: 104px;
+    }
+}
+
+.title {
+    text-align: center;
+}
